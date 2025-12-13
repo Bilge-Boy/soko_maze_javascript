@@ -1,1 +1,100 @@
 <!--soko_maze.html goes here-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+<div class="menu" id="first-page">
+  <nav id="">
+    <ul class="menu-items">
+      <li class="item">
+        <button class="start" onclick="toggleMenu();StartGame()">
+          NEW GAME
+        </button>
+      </li>
+      <li class="item">
+        <p class="credits">
+          <!--hidden onclick="showIns()"-->
+          click above to start new game <br />
+          RULES:
+          <br>
+          1.player is controlled with keyboards arrows
+          <br>
+
+          2.box cannot exceed the grid.
+          <br>
+          3.player cannot move 2 boxes simultanesly.
+          <br>
+          GOOD LUCK AND HAVE FUN!
+        </p> <span>
+
+          </p>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+<div class="lvl-1">
+  <button onclick="StartGame()">
+    restart
+  </button>
+  <button onclick="toggleMenu()">
+    back to main menu
+  </button>
+  <div class="playground">
+  </div>
+</div>
+
+<div class="completed-lvl">
+  <h1>
+    congrats
+  </h1>
+  <h1>
+    ⭐⭐⭐⭐⭐
+  </h1>
+  <div class="d-flex justify-content-around">
+    <button onclick="ShowFin(false,1);StartGame() ">REPLAY</button>
+    <button class="next-lvl">NEXT LEVEL</button>
+  </div>
+
+</div>
+
+<div class="instruction" hidden>
+  <div class="inst-text">
+    <p>
+      WELCOME!
+      <br>
+      your goal is to help James the laborant
+      organize his lab!
+      by using your keyboards arrows move James around and push the boxes
+      into thier places
+    <div class="ins-flex">
+      <div>
+        <span class="player">james</span>
+        <span>✅⬇</span>
+        <span class="box"></span>
+        <br>
+        <div class="cols"></div>
+        <div class="cols  x-container"></div>
+      </div>
+      <div>
+        <span class="player">james</span>
+        <span>❌⬇</span>
+        <div>
+          <div class="box"></div>
+        </div>
+        <br>
+        <div>
+          <div class="box"></div>
+        </div>
+        <br>
+
+      </div>
+
+    </div>
+
+  </div>
+  <div class="keys-container">
+    <div class="up-arrow"></div>
+    <div class="right-arrow"></div>
+    <div class="down-arrow"></div>
+    <div class="left-arrow"></div>
+  </div>
+</div>
