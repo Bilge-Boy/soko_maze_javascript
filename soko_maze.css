@@ -1,4 +1,4 @@
-body {
+/* body {
 	 background-color: #1a1a1a;
 	 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	 color: white;
@@ -170,10 +170,10 @@ body {
 }
  .lvl-1 button:hover {
 	 background: rgba(255, 255, 255, 0.2);
-}
+} */
  
 
-/* img {
+ img {
 	 position: absolute;
 }
  html body {
@@ -407,4 +407,6 @@ body {
 		 border-bottom: 10px solid #646464;
 		 border-left: 10px solid #b6b6b6;
 	}
-} */
+}
+
+
